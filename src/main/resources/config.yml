@@ -10,3 +10,8 @@ firework-rocket-name: "&cFirework rocket"
 # Firework gun lore
 firework-rocket-lore:
   - "&eRight-click &7to fire a firework!"
+  
+# Set cooltime for gun to next shot(second)
+cooltime: 5
+# cooltime lore
+cooltime-lore: "&6&lOwnNewYearEve &8» &cYou need to wait for %time% second, then you can shot!"

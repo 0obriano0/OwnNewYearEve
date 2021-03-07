@@ -13,6 +13,8 @@ public class ConfigManager {
     private List<String> rocket_gun_lore;
     private boolean metrics;
     private int newyear_start_max_time_limit;
+    private int cooltime;
+    private String cooltime_lore;
 
     public ConfigManager(OwnNewYearEve plugin)
     {
@@ -29,6 +31,8 @@ public class ConfigManager {
         rocket_gun_lore = ChatUtil.fixColors(config.getStringList("firework-rocket-lore"));
         metrics = config.getBoolean("plugin-metrics");
         newyear_start_max_time_limit = config.getInt("newyear-start-max-time-limit");
+        cooltime = config.getInt("cooltime");
+        cooltime_lore = config.getString("cooltime-lore");
     }
 
     public String getRocket_gun_name()
@@ -49,6 +53,16 @@ public class ConfigManager {
     public int getNewyear_start_max_time_limit()
     {
         return newyear_start_max_time_limit;
+    }
+    
+    public int getcooltime()
+    {
+    	return cooltime;
+    }
+    
+    public String getcooltime_lore()
+    {
+    	return cooltime_lore;
     }
 
 }
